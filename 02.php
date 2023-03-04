@@ -20,5 +20,8 @@ for ($i = 0; $i < count($array); $i++)
         }
     }
 }
+// sau khi đẩy lên git và ta lại vào code tiếp , ta muốn đẩy lên git tiếp ta dùng 3 câu lệnh git add . 
+// git commit -m "day_len_git"
+// git  push -u origin
 echo "Giá trị lớn nhất là $max, nằm tại vị trí $position";
 ?>
