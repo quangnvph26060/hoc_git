@@ -13,3 +13,7 @@ function number_1($number){
 }
 $result = number_1(23);
 echo $result;
+git init
+git remote add origin https://github.com/quangnvph26060/hoc_git.git
+git commit -m "day_len_git" nếu lỗi thì chạy câu lệnh  git branch -M main
+git push -u origin
