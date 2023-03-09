@@ -19,7 +19,7 @@
     // $error = array();
 
     if (isset($_POST['btn'])) {
-       if(empty($_POST['email'])){
+       if(empty($_POST['email'])){// empty kiểm tra biến có rỗng hay không 
              echo   $erorr['email'] = "vui lòng nhập email";
        }elseif(!filter_var($_POST['email'],FILTER_VALIDATE_EMAIL)){
             echo   $erorr['email'] = "vui lòng nhập email 3";
