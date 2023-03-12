@@ -23,9 +23,6 @@
 //  rồi chạy 
 //  b7: copy và chạy câu lệnh dưới : git push -u origin main
 
-//  nếu muốn thêm file khác chỉ cần git add . nó sẽ add toàn bộ các file vào 
-//  sau đó git commit -m lưu thay đổi vào repositores vào trong máy sau chạy gp
-//  *//
 
 
 // git init
