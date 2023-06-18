@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Chọn hết Checkbox hoặc bỏ chọn All Checkbox</h1>
+    <h3 class="h3"></h3>
+    <input type="checkbox" class="check" value="1"> 1
+    <input type="checkbox" class="check" value="2"> 2
+    <input type="checkbox" class="check" value="3"> 3
+    <input type="checkbox" class="check" value="4"> 4
+    <br>
+    <input type="checkbox" class="onCheckbox"> All Checkbox
+    <br>
+
+    <input type="checkbox" class="underCheckbox"> Under Checkbox
+</body>
+<script>
+    var checkbox = document.querySelector('.onCheckbox');
+    var check = document.querySelectorAll('.check');
+    checkbox.addEventListener('click', function () { // chọn tất cả
+        if (checkbox) {
+
+            for (let a of check) {
+                a.checked = true;
+            }
+        }
+    })
+    // bỏ chọn tất cả
+    var underCheckbox = document.querySelector('.underCheckbox');
+    underCheckbox.addEventListener('click', function () {
+        if (underCheckbox) {
+            for (let a of check) {
+                a.checked = false;
+                checkbox.checked = false;
+            }
+        }
+    })
+    // checked là một thuộc tính của các phần tử input trong HTML,
+    //  được sử dụng để kiểm tra xem một phần tử input có được chọn hay không.
+    //   Khi một phần tử input được chọn, giá trị của thuộc tính checked sẽ được đặt thành true,
+    //    ngược lại giá trị của nó sẽ là false.
+</script>
+
+</html>
