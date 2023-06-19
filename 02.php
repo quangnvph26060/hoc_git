@@ -1,6 +1,6 @@
 <?php
 // tìm số lớn nhất trong mảng 
-$array =[100,1,40,-1,20,-5];
+$array = [100,1,40,-1,20,-5];
 echo min($array) . '<br>'; 
 echo max($array);
 $max = null; 
