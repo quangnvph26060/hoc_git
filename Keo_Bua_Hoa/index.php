@@ -13,9 +13,9 @@
         <p>1:kéo , 2:Búa ,3:Hoa</p>
         <input type="text" name="valueInput">
         <br>
-       
+    
         <input type="submit" name="btn">
-       
+
     </form>
     <?php
 
@@ -28,23 +28,23 @@
         echo "</br>";
         echo "Của Người Chơi Nhập :" .  $ra_cai_gi;
         echo "</br>";
-        if (!empty($ra_cai_gi)) {
+        if (!empty($ra_cai_gi) && $ra_cai_gi == 1 || $ra_cai_gi ==2 || $ra_cai_gi == 3 ) {
             switch ($boss) {
                 case '1':
                     if ($ra_cai_gi == 1) {
                         echo      "Hòa Ok !!!";
                     } else if ($ra_cai_gi > 1 && $ra_cai_gi == 2) {
-                       echo  ' Boss Thua';
+                        echo  ' Boss Thua';
                     } else {
                         echo   "Boss Win ok chưa @@";
                     }
                     break;
                 case '2':
-                  
+
                     if ($ra_cai_gi == 2) {
                         echo      "Hòa Ok !!!";
                     } else if ($ra_cai_gi > 1) {
-                       echo  ' Boss Thua';
+                        echo  ' Boss Thua';
                     } else {
                         echo   "Boss Win ok chưa @@";
                     }
@@ -52,16 +52,15 @@
                 case '3':
                     if ($ra_cai_gi == 3) {
                         echo      "Hòa Ok !!!";
-                    
-                    } else if ($ra_cai_gi < 3 && $ra_cai_gi == 2  ) {
-                       echo  'Boss Win ok chưa @@';
+                    } else if ($ra_cai_gi < 3 && $ra_cai_gi == 2) {
+                        echo  'Boss Win ok chưa @@';
                     } else {
                         echo   "Boss thua";
                     }
                     break;
             }
         } else {
-          echo   " Vui Lòng Nhập đi ok !!";
+         echo   " Vui Lòng Nhập đi ok !!";
         }
     }
     ?>

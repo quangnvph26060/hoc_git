@@ -1,5 +1,5 @@
 <?php
-$arr = [5, 12, 3, 121,14];
+$arr = [5, 122, 33, 1212,14,-123];
 
 $max_arr = max($arr);
 echo "Giá trị lớn nhất đầu tiên của mảng là :" . $max_arr;
